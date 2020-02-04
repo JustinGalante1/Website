@@ -19,6 +19,6 @@ Including another URLconf
 
 urlpatterns = [
     # path('base_site', include('base_site.urls')),
-    path('', views.home, name="home"),
+    path('', views.HomeView.as_view(), name="home"),
     path('admin/', admin.site.urls),
 ]
