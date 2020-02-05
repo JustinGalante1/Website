@@ -20,5 +20,6 @@ Including another URLconf
 urlpatterns = [
     # path('base_site', include('base_site.urls')),
     path('', views.HomeView.as_view(), name="home"),
+    path('CoursePlanner/', include('CoursePlanner.urls')),
     path('admin/', admin.site.urls),
 ]
